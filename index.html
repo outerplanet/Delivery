@@ -17,7 +17,6 @@
 	<!---->
 	<title>DHL Deliver Website</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 </head>
@@ -26,16 +25,43 @@
 		<div class="header__menu">
 			<div class="page-width">
 				<div class="header__content">
-					<div class="header__left-box">
-						<button class="header__left-box-hamburger"></button>
-						<a class="header__left-box-language" href="#">English</a>
+					<div class="header__left">
+						<button class="header__left-hamburger hamburger__button"><i class="fas fa-bars"></i></button>
+						<div class="header__left-language">
+							<a class="header__left-language-submenu-button submenu__button" href="javascript:void(0)">
+								<p class="header__left-language-submenu-button-text">English</p>
+								<div class="header__left-language-submenu-button-icon">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+							</a>
+							<div class="header__left-language-submenu submenu">
+								<a class="header__left-language-submenu-link" href="#">English</a>
+								<a class="header__left-language-submenu-link" href="#">French</a>
+							</div>
+						</div>
 					</div>
-					<div class="header__right-box">
-						<a class="header__right-box-text1" href="#">Contact Center</a>
-						<a class="header__right-box-text2" href="#">Country Profile</a>
-						<div class="header__right-box-search">
-							<input class="header__right-box-search-input" type="search" name="search" placeholder="Search...">
-							<button class="header__right-box-search-btn"></button>
+					<div class="header__right">
+						<a class="header__right-item1" href="javascript:void(0)">
+							<div class="header__right-item1-icon">
+								<i class="fas fa-users"></i>
+							</div>
+							<p class="header__right-item1-text">Contact Center</p>
+						</a>
+						<div class="header__right-item2">
+							<a class="header__right-item2-submenu-button submenu__button" href="javascript:void(0)">
+								<p class="header__right-item2-submenu-button-text">Country Profile</p>
+								<div class="header__right-item2-submenu-button-icon">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+							</a>
+							<div class="header__right-item2-submenu submenu">
+								<a class="header__right-item2-submenu-link" href="#">Lorem</a>
+								<a class="header__right-item2-submenu-link" href="#">Ipsum</a>
+							</div>
+						</div>
+						<div class="header__right-search">
+							<input class="header__right-search-input search__input" type="search" name="search" placeholder="Search...">
+							<button class="header__right-search-button search__button"><i class="fas fa-search"></i></button>
 						</div>
 					</div>
 				</div>
@@ -44,7 +70,7 @@
 		<div class="header__nav">
 			<div class="page-width">
 				<nav class="header__nav-wrapper">
-					<div class="header__nav-logo"><img src="img/logo.png" alt="Logo"></div>
+					<div class="header__nav-logo"><img class="header__nav-logo-img" src="img/logo.png" alt="Logo"></div>
 					<ul class="header__nav-content">
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Express</a></li>
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Parcel & Ecommerce</a></li>
@@ -54,183 +80,253 @@
 						<li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
 					</ul>
 					<div class="header__nav-search">
-						<input class="header__nav-search-input" type="search" name="search" placeholder="Search...">
-						<button class="header__nav-search-btn"></button>
+						<input class="header__nav-search-input search__input" type="search" name="search" placeholder="Search...">
+						<button class="header__nav-search-button search__button"><i class="fas fa-search"></i></button>
 					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<main class="main">
-		<div class="layer1">
+		<section class="banner">
 			<div class="page-width">
-				<h1 class="layer1__title">We Deliver <br> With Speed</h1>
-				<p class="layer1__description">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-				<div class="layer1__tags">
-					<p>Amazing</p>
-					<p>Quick</p>
-					<p>24/7 Supports</p>
+				<h1 class="banner__title">We Deliver <br> With Speed</h1>
+				<p class="banner__description">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+				<div class="banner__tags">
+					<p class="banner__tag">Amazing</p>
+					<p class="banner__tag">Quick</p>
+					<p class="banner__tag">24/7 Supports</p>
 				</div>
-				<div class="layer1__buttons">
-					<a class="layer1__button1" href="#">Learn More</a>
-					<a class="layer1__button2" href="#">dhl worldwide</a>
-				</div>
-			</div>
-		</div>
-		<div class="layer2">
-			<div class="page-width">
-				<h2 class="layer2__title">Awesome Services</h2>
-				<div class="layer2__cards">
-					<div class="layer2__card">
-						<img src="img/serviceimg1.jpg" alt="Service">
-						<div class="layer2__card-text">
-							<h4 class="layer2__card-title">Express Services</h4>
-							<p class="layer2__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
-							<a class="layer2__card-button" href="#">Read More</a>
-						</div>
-					</div>
-					<div class="layer2__card">
-						<img src="img/serviceimg2.jpg" alt="Service">
-						<div class="layer2__card-text">
-							<h4 class="layer2__card-title">parcel & ecommerce</h4>
-							<p class="layer2__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
-							<a class="layer2__card-button" href="#">Read More</a>
-						</div>
-					</div>
-					<div class="layer2__card">
-						<img src="img/serviceimg3.jpg" alt="Service">
-						<div class="layer2__card-text">
-							<h4 class="layer2__card-title">frieght transport</h4>
-							<p class="layer2__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
-							<a class="layer2__card-button" href="#">Read More</a>
-						</div>
-					</div>
-					<div class="layer2__card-form">
-						<h4 class="layer2__card-form-title">DHl Worldwide</h4>
-						<p class="layer2__card-form-description">When an unknown prot printer type and scra</p>
-						<a class="layer2__card-form-location" href="#">Location</a>
-						<a class="layer2__card-form-button" href="#">explore</a>
-					</div>
+				<div class="banner__buttons">
+					<a class="banner__button1" href="#">Learn More</a>
+					<a class="banner__button2" href="#">dhl worldwide</a>
 				</div>
 			</div>
-		</div>
-		<div class="layer3">
-			<h2 class="layer3__title">One of the best international service providers</h2>
-			<a class="layer3__button" href="#"></a>
+		</section>
+		<section class="services">
 			<div class="page-width">
-				<div class="layer3__cards">
-					<div class="layer3__card">
-						<img class="layer3__card-img" src="img/providing1.jpg" alt="Providing">
-						<div class="layer3__card-text">
-							<h4 class="layer3__card-title">Aerospace Provider</h4>
-							<div class="layer3__card-description">
-								<p class="layer3__card-txt">When an unknown printer took.</p>
-								<p class="layer3__card-txt">Make a type specimen book.</p>
-								<p class="layer3__card-txt">It has survived.</p>
-								<p class="layer3__card-txt">Airlines unknown specimen.</p>
-							</div>
+				<h2 class="services__title">Awesome Services</h2>
+				<div class="services__cards">
+					<div class="services__card">
+						<img class="services__card-img" src="img/services-img1.jpg" alt="Service">
+						<div class="services__card-text">
+							<h4 class="services__card-title">Express Services</h4>
+							<p class="services__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+							<a class="services__card-button" href="#">Read More</a>
 						</div>
 					</div>
-					<div class="layer3__card">
-						<img class="layer3__card-img" src="img/providing2.jpg" alt="Providing">
-						<div class="layer3__card-text">
-							<h4 class="layer3__card-title">Poppins Proved</h4>
-							<div class="layer3__card-description">
-								<p class="layer3__card-txt">When an unknown printer took.</p>
-								<p class="layer3__card-txt">Make a type specimen book.</p>
-								<p class="layer3__card-txt">It has survived.</p>
-								<p class="layer3__card-txt">Airlines unknown specimen.</p>
-							</div>
+					<div class="services__card">
+						<img class="services__card-img" src="img/services-img2.jpg" alt="Service">
+						<div class="services__card-text">
+							<h4 class="services__card-title">parcel & ecommerce</h4>
+							<p class="services__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+							<a class="services__card-button" href="#">Read More</a>
 						</div>
 					</div>
-					<div class="layer3__card">
-						<img class="layer3__card-img" src="img/providing3.jpg" alt="Providing">
-						<div class="layer3__card-text">
-							<h4 class="layer3__card-title">Airline Specimen</h4>
-							<div class="layer3__card-description">
-								<p class="layer3__card-txt">When an unknown printer took.</p>
-								<p class="layer3__card-txt">Make a type specimen book.</p>
-								<p class="layer3__card-txt">It has survived.</p>
-								<p class="layer3__card-txt">Airlines unknown specimen.</p>
-							</div>
+					<div class="services__card">
+						<img class="services__card-img" src="img/services-img3.jpg" alt="Service">
+						<div class="services__card-text">
+							<h4 class="services__card-title">frieght transport</h4>
+							<p class="services__card-description">When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+							<a class="services__card-button" href="#">Read More</a>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="layer4">
-			<div class="page-width">
-				<div class="layer4__wrapper">
-					<div class="layer4__item1">
-						<nav class="layer4__item1-headers">
-							<a class="layer4__item1-header1" href="#">
-								<p class="layer4__item1-header1">express</p>
+					<div class="services__card-form services__card">
+						<h4 class="services__card-form-title">DHl Worldwide</h4>
+						<p class="services__card-form-description">When an unknown prot printer type and scra</p>
+						<div class="services__card-form-location accordion">
+							<a class="services__card-form-location-accordion-button accordion__button" href="javascript:void(0)">
+								<p class="services__card-form-location-accordion-button-text">Location</p>
+								<div class="services__card-form-location-accordion-button-icon-container">
+									<div class="services__card-form-location-accordion-button-icon">
+										<i class="fas fa-chevron-down"></i>
+									</div>
+								</div>
 							</a>
-							<a class="layer4__item1-header2" href="#">
-								<p class="layer4__item1-header2">logistics</p>
-							</a>
-						</nav>
-						<div class="layer4__item1-content">
-							<a href="#" class="layer4__item1-text">Track your shipment</a>
-							<a href="#" class="layer4__item1-text">New login</a>
-							<a href="#" class="layer4__item1-text">Find Dhl point</a>
-							<div class="layer4__item1-container">
-								<a href="#" class="layer4__item1-text active">find a service</a>
-								<div class="layer4__item1-description">
-									<p class="layer4__item1-description-header">International Services to Another Country</p>
-									<p class="layer4__item1-description-txt">Emergency</p>
-									<p class="layer4__item1-description-txt">Time Critical</p>
-									<p class="layer4__item1-description-txt">Less Urgent</p>
+							<div class="services__card-form-location-accordion-wrapper accordion__wrapper">
+								<div class="services__card-form-location-accordion-inner-wrapper">
+									<a class="services__card-form-location-accordion-link" href="#">Lorem</a>
+									<a class="services__card-form-location-accordion-link" href="#">Ipsum</a>
 								</div>
 							</div>
 						</div>
+						<a class="services__card-form-button" href="#">explore</a>
 					</div>
-					<div class="layer4__item2">
-						<div class="layer4__item2-hidden-img-container">
-							<img class="layer4__item2-hidden-img" src="img/layer4.jpg">
+				</div>
+			</div>
+		</section>
+		<section class="providings">
+			<h2 class="providings__title">One of the best international service providers</h2>
+			<a class="providings__button" href="#"><i class="fas fa-play"></i></a>
+			<div class="page-width">
+				<div class="providings__cards">
+					<div class="providings__card">
+						<img class="providings__card-img" src="img/providing1.jpg" alt="Providing">
+						<div class="providings__card-article">
+							<h4 class="providings__card-title">Aerospace Provider</h4>
+							<div class="providings__card-description">
+								<p class="providings__card-text">When an unknown printer took.</p>
+								<p class="providings__card-text">Make a type specimen book.</p>
+								<p class="providings__card-text">It has survived.</p>
+								<p class="providings__card-text">Airlines unknown specimen.</p>
+							</div>
 						</div>
-						<div class="layer4__item2-shown-img">
-							<img src="img/layer4.jpg" alt="">
+					</div>
+					<div class="providings__card">
+						<img class="providings__card-img" src="img/providing2.jpg" alt="Providing">
+						<div class="providings__card-article">
+							<h4 class="providings__card-title">Poppins Proved</h4>
+							<div class="providings__card-description">
+								<p class="providings__card-text">When an unknown printer took.</p>
+								<p class="providings__card-text">Make a type specimen book.</p>
+								<p class="providings__card-text">It has survived.</p>
+								<p class="providings__card-text">Airlines unknown specimen.</p>
+							</div>
+						</div>
+					</div>
+					<div class="providings__card">
+						<img class="providings__card-img" src="img/providing3.jpg" alt="Providing">
+						<div class="providings__card-article">
+							<h4 class="providings__card-title">Airline Specimen</h4>
+							<div class="providings__card-description">
+								<p class="providings__card-text">When an unknown printer took.</p>
+								<p class="providings__card-text">Make a type specimen book.</p>
+								<p class="providings__card-text">It has survived.</p>
+								<p class="providings__card-text">Airlines unknown specimen.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="specifications">
+			<div class="page-width">
+				<div class="specifications__wrapper">
+					<div class="specifications__item1 tab">
+						<nav class="specifications__item1-headers">
+							<a class="specifications__item1-header1 tab__button tab__button--active" href="javascript:void(0)">
+								<p class="specifications__item1-header1-title">express</p>
+							</a>
+							<a class="specifications__item1-header2 tab__button" href="javascript:void(0)">
+								<p class="specifications__item1-header2-title">logistics</p>
+							</a>
+						</nav>
+						<div class="specifications__item1-tab tab__item tab__item--active">
+							<div class="specifications__item1-tab-accordion accordion accordion--active">
+								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button--active" href="javascript:void(0)">
+									<p class="specifications__item1-tab-accordion-button-text">Track your shipment</p>
+									<div class="specifications__item1-tab-accordion-button-icon-container">
+										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+									</div>
+								</a>
+								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper accordion__wrapper--active">
+									<div class="specifications__item1-tab-accordion-inner-wrapper">
+										<p class="specifications__item1-tab-accordion-header">International Services to Another Country</p>
+										<p class="specifications__item1-tab-accordion-text">Emergency</p>
+										<p class="specifications__item1-tab-accordion-text">Time Critical</p>
+										<p class="specifications__item1-tab-accordion-text">Less Urgent</p>
+									</div>
+								</div>
+							</div>
+							<div class="specifications__item1-tab-accordion accordion">
+								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
+									<p class="specifications__item1-tab-accordion-button-text">New login</p>
+									<div class="specifications__item1-tab-accordion-button-icon-container">
+										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+									</div>
+								</a>
+								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
+									<div class="specifications__item1-tab-accordion-inner-wrapper">
+										<p class="specifications__item1-tab-accordion-header">International Services to Another Country</p>
+										<p class="specifications__item1-tab-accordion-text">Emergency</p>
+										<p class="specifications__item1-tab-accordion-text">Time Critical</p>
+										<p class="specifications__item1-tab-accordion-text">Less Urgent</p>
+									</div>
+								</div>
+							</div>
+							<div class="specifications__item1-tab-accordion accordion">
+								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
+									<p class="specifications__item1-tab-accordion-button-text">Find Dhl point</p>
+									<div class="specifications__item1-tab-accordion-button-icon-container">
+										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+									</div>
+								</a>
+								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
+									<div class="specifications__item1-tab-accordion-inner-wrapper">
+										<p class="specifications__item1-tab-accordion-header">International Services to Another Country</p>
+										<p class="specifications__item1-tab-accordion-text">Emergency</p>
+										<p class="specifications__item1-tab-accordion-text">Time Critical</p>
+										<p class="specifications__item1-tab-accordion-text">Less Urgent</p>
+									</div>
+								</div>
+							</div>
+							<div class="specifications__item1-tab-accordion accordion">
+								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
+									<p class="specifications__item1-tab-accordion-button-text">find a service</p>
+									<div class="specifications__item1-tab-accordion-button-icon-container">
+										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+									</div>
+								</a>
+								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
+									<div class="specifications__item1-tab-accordion-inner-wrapper">
+										<p class="specifications__item1-tab-accordion-header">International Services to Another Country</p>
+										<p class="specifications__item1-tab-accordion-text">Emergency</p>
+										<p class="specifications__item1-tab-accordion-text">Time Critical</p>
+										<p class="specifications__item1-tab-accordion-text">Less Urgent</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specifications__item1-tab tab__item">
+							<p class="specifications__item1-tab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia aliquam, vero placeat aperiam sapiente nobis, fugiat eos exercitationem doloremque quis dicta quaerat explicabo esse laborum deleniti nemo perspiciatis ea eaque eveniet, ut natus non. Alias atque delectus quod ducimus iusto esse dolores explicabo qui dolore repellendus voluptates, incidunt molestias voluptatum aliquam amet itaque cum consectetur sequi eaque sunt officiis! Expedita, earum magni in ea nisi perspiciatis doloribus provident quisquam dolor alias rerum error voluptatum molestiae aperiam maxime minima iste accusantium nobis sapiente adipisci possimus deserunt nihil? Deserunt, facilis doloribus dolor soluta minus fugit natus tempora ut, ratione reiciendis ipsa?</p>
+						</div>
+					</div>
+					<div class="specifications__item2">
+						<div class="specifications__item2-hidden-img-container">
+							<img class="specifications__item2-hidden-img" src="img/specifications-img.jpg">
+						</div>
+						<div class="specifications__item2-visible-img">
+							<img src="img/specifications-img.jpg" alt="">
 							<img class="logo" src="img/logo2.png" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="layer5">
+		</section>
+		<section class="about">
 			<div class="page-width">
-				<div class="layer5__wrapper">
-					<div class="layer5__text">
-						<h3 class="layer5__title">Excellence. Simply delivered.</h3>
-						<p class="layer5__txt">International express deliveries; global freight forwarding by air, sea, road and rail; warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide; and other customized logistic services – with everything DHL does, we help connect people and improve their lives.</p>
+				<div class="about__wrapper">
+					<div class="about__text">
+						<h3 class="about__title">Excellence. Simply delivered.</h3>
+						<p class="about__text">International express deliveries; global freight forwarding by air, sea, road and rail; warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide; and other customized logistic services – with everything DHL does, we help connect people and improve their lives.</p>
 					</div>
-					<a class="layer5__button" href="#">learn more</a>
+					<a class="about__button" href="#">learn more</a>
 				</div>
 			</div>
-		</div>
-		<div class="layer6">
+		</section>
+		<section class="partners">
 			<div class="page-width">
-				<div class="layer6__wrapper">
-					<a class="layer6__img" href="#">
-						<img src="img/layer6img1.png" alt="Partner">
+				<div class="partners__wrapper">
+					<a class="partners__img" href="#" target="_blank">
+						<img src="img/partner1.png" alt="Partner">
 					</a>
-					<a class="layer6__img" href="#">
-						<img src="img/layer6img2.png" alt="Partner">
+					<a class="partners__img" href="#" target="_blank">
+						<img src="img/partner2.png" alt="Partner">
 					</a>
-					<a class="layer6__img" href="#">
-						<img src="img/layer6img3.png" alt="Partner">
+					<a class="partners__img" href="#" target="_blank">
+						<img src="img/partner3.png" alt="Partner">
 					</a>
-					<a class="layer6__img" href="#">
-						<img src="img/layer6img4.png" alt="Partner">
+					<a class="partners__img" href="#" target="_blank">
+						<img src="img/partner4.png" alt="Partner">
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__wrapper">
-			<div class="footer__img-left"><img src="img/footer1.png"></div>
-			<nav class="footer__nav">
+			<div class="footer__img-left"><img src="img/footer-img1.png"></div>
+			<div class="footer__nav">
 				<div class="footer__nav-item1 footer__nav-item">
 					<h4 class="footer__nav-title">Contact Center</h4>
 					<ul class="footer__nav-text-container">
@@ -261,30 +357,28 @@
 						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">twitter</a></li>
 					</ul>
 				</div>
-			</nav>
-			<div class="footer__img-right"><img src="img/footer2.png"></div>
+			</div>
+			<div class="footer__img-right"><img src="img/footer-img2.png"></div>
 		</div>
 	</footer>
-
 	<div class="hamburger">
-		<div class="hamburger__menu">
-			<div class="hamburger__content">
-				<a class="hamburger__content-language" href="#">Language</a>
-				<a class="hamburger__content-text1" href="#">Contact Center</a>
-				<a class="hamburger__content-text2" href="#">Country Profile</a>
-			</div>
-			<h3>Other:</h3>
-			<div class="hamburger__content2">
-				<a href="#">Express</a>
-				<a href="#">Parcel & Ecommerce</a>
-				<a href="#">Logistics</a>
-				<a href="#">Mail</a>
-				<a href="#">Press</a>
-				<a href="#">About</a>
-			</div>
+		<div class="hamburger__wrapper">
+			<nav class="hamburger__nav">
+				<a class="hamburger__link" href="#">Language</a>
+				<a class="hamburger__link" href="#">Contact Center</a>
+				<a class="hamburger__link" href="#">Country Profile</a>
+			</nav>
+			<h3 class="hamburger__title">Other:</h3>
+			<nav class="hamburger__nav">
+				<a class="hamburger__link2" href="#">Express</a>
+				<a class="hamburger__link2" href="#">Parcel & Ecommerce</a>
+				<a class="hamburger__link2" href="#">Logistics</a>
+				<a class="hamburger__link2" href="#">Mail</a>
+				<a class="hamburger__link2" href="#">Press</a>
+				<a class="hamburger__link2" href="#">About</a>
+			</nav>
 		</div>
 	</div>
-
 	<script src="script/script.js"></script>
 </body>
 </html>
