@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>DHL Deliver Website</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -14,8 +14,6 @@
 	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<!---->
-	<title>DHL Deliver Website</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
@@ -26,7 +24,7 @@
 			<div class="page-width">
 				<div class="header__content">
 					<div class="header__left">
-						<button class="header__left-hamburger hamburger__button"><i class="fas fa-bars"></i></button>
+						<button class="header__left-hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
 						<div class="header__left-language">
 							<a class="header__left-language-submenu-button submenu__button" href="javascript:void(0)">
 								<p class="header__left-language-submenu-button-text">English</p>
@@ -61,7 +59,7 @@
 						</div>
 						<div class="header__right-search">
 							<input class="header__right-search-input search__input" type="search" name="search" placeholder="Search...">
-							<button class="header__right-search-button search__button"><i class="fas fa-search"></i></button>
+							<button class="header__right-search-button search__button" aria-label="Search"><i class="fas fa-search"></i></button>
 						</div>
 					</div>
 				</div>
@@ -70,18 +68,18 @@
 		<div class="header__nav">
 			<div class="page-width">
 				<nav class="header__nav-wrapper">
-					<div class="header__nav-logo"><img class="header__nav-logo-img" src="img/logo.png" alt="Logo"></div>
-					<ul class="header__nav-content">
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Express</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Parcel & Ecommerce</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Logistics</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Mail</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Press</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
-					</ul>
+					<a class="header__nav-logo" href="/"><img class="header__nav-logo-img" src="img/logo.png" alt="Logo"></a>
+					<nav class="header__nav-content">
+						<a class="header__nav-link" href="#">Express</a>
+						<a class="header__nav-link" href="#">Parcel & Ecommerce</a>
+						<a class="header__nav-link" href="#">Logistics</a>
+						<a class="header__nav-link" href="#">Mail</a>
+						<a class="header__nav-link" href="#">Press</a>
+						<a class="header__nav-link" href="#">About</a>
+					</nav>
 					<div class="header__nav-search">
 						<input class="header__nav-search-input search__input" type="search" name="search" placeholder="Search...">
-						<button class="header__nav-search-button search__button"><i class="fas fa-search"></i></button>
+						<button class="header__nav-search-button search__button" aria-label="Search"><i class="fas fa-search"></i></button>
 					</div>
 				</nav>
 			</div>
@@ -283,7 +281,7 @@
 					</div>
 					<div class="specifications__item2">
 						<div class="specifications__item2-hidden-img-container">
-							<img class="specifications__item2-hidden-img" src="img/specifications-img.jpg">
+							<img class="specifications__item2-hidden-img" src="img/specifications-img.jpg" alt="">
 						</div>
 						<div class="specifications__item2-visible-img">
 							<img src="img/specifications-img.jpg" alt="">
@@ -325,7 +323,7 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__wrapper">
-			<div class="footer__img-left"><img src="img/footer-img1.png"></div>
+			<div class="footer__img-left"><img src="img/footer-img1.png" alt=""></div>
 			<div class="footer__nav">
 				<div class="footer__nav-item1 footer__nav-item">
 					<h4 class="footer__nav-title">Contact Center</h4>
@@ -358,7 +356,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer__img-right"><img src="img/footer-img2.png"></div>
+			<div class="footer__img-right"><img src="img/footer-img2.png" alt=""></div>
 		</div>
 	</footer>
 	<div class="hamburger">
@@ -379,6 +377,6 @@
 			</nav>
 		</div>
 	</div>
-	<script src="script/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
