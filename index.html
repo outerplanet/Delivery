@@ -15,8 +15,9 @@
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header">
@@ -24,7 +25,9 @@
 			<div class="page-width">
 				<div class="header__content">
 					<div class="header__left">
-						<button class="header__left-hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+						<button class="header__left-hamburger hamburger__button" aria-label="Open navigation">
+							<i class="fas fa-bars"></i>
+						</button>
 						<div class="header__left-language">
 							<a class="header__left-language-submenu-button submenu__button" href="javascript:void(0)">
 								<p class="header__left-language-submenu-button-text">English</p>
@@ -32,7 +35,7 @@
 									<i class="fas fa-chevron-down"></i>
 								</div>
 							</a>
-							<div class="header__left-language-submenu submenu">
+							<div class="header__left-language-submenu submenu__wrapper">
 								<a class="header__left-language-submenu-link" href="#">English</a>
 								<a class="header__left-language-submenu-link" href="#">French</a>
 							</div>
@@ -52,14 +55,16 @@
 									<i class="fas fa-chevron-down"></i>
 								</div>
 							</a>
-							<div class="header__right-item2-submenu submenu">
+							<div class="header__right-item2-submenu submenu__wrapper">
 								<a class="header__right-item2-submenu-link" href="#">Lorem</a>
 								<a class="header__right-item2-submenu-link" href="#">Ipsum</a>
 							</div>
 						</div>
 						<div class="header__right-search">
-							<input class="header__right-search-input search__input" type="search" name="search" placeholder="Search...">
-							<button class="header__right-search-button search__button" aria-label="Search"><i class="fas fa-search"></i></button>
+							<input class="header__right-search-input search__input submenu__wrapper" type="search" name="search" placeholder="Search...">
+							<button class="header__right-search-button search__button submenu__button" aria-label="Search">
+								<i class="fas fa-search"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -68,7 +73,9 @@
 		<div class="header__nav">
 			<div class="page-width">
 				<nav class="header__nav-wrapper">
-					<a class="header__nav-logo" href="/"><img class="header__nav-logo-img" src="img/logo.png" alt="Logo"></a>
+					<a class="header__nav-logo" href="/" aria-label="Homepage">
+						<img class="header__nav-logo-img" src="img/logo.png" alt="Logo">
+					</a>
 					<nav class="header__nav-content">
 						<a class="header__nav-link" href="#">Express</a>
 						<a class="header__nav-link" href="#">Parcel & Ecommerce</a>
@@ -78,8 +85,10 @@
 						<a class="header__nav-link" href="#">About</a>
 					</nav>
 					<div class="header__nav-search">
-						<input class="header__nav-search-input search__input" type="search" name="search" placeholder="Search...">
-						<button class="header__nav-search-button search__button" aria-label="Search"><i class="fas fa-search"></i></button>
+						<input class="header__nav-search-input search__input submenu__wrapper" type="search" name="search" placeholder="Search...">
+						<button class="header__nav-search-button search__button submenu__button" aria-label="Search">
+							<i class="fas fa-search"></i>
+						</button>
 					</div>
 				</nav>
 			</div>
@@ -155,7 +164,9 @@
 		</section>
 		<section class="providings">
 			<h2 class="providings__title">One of the best international service providers</h2>
-			<a class="providings__button" href="#"><i class="fas fa-play"></i></a>
+			<a class="providings__button" href="#">
+				<i class="fas fa-play"></i>
+			</a>
 			<div class="page-width">
 				<div class="providings__cards">
 					<div class="providings__card">
@@ -210,14 +221,16 @@
 							</a>
 						</nav>
 						<div class="specifications__item1-tab tab__item tab__item--active">
-							<div class="specifications__item1-tab-accordion accordion accordion--active">
-								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button--active" href="javascript:void(0)">
+							<div class="specifications__item1-tab-accordion accordion accordion--open">
+								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button--open" href="javascript:void(0)">
 									<p class="specifications__item1-tab-accordion-button-text">Track your shipment</p>
 									<div class="specifications__item1-tab-accordion-button-icon-container">
-										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+										<div class="specifications__item1-tab-accordion-button-icon">
+											<i class="fas fa-chevron-down"></i>
+										</div>
 									</div>
 								</a>
-								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper accordion__wrapper--active">
+								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper accordion__wrapper--open">
 									<div class="specifications__item1-tab-accordion-inner-wrapper">
 										<p class="specifications__item1-tab-accordion-header">International Services to Another Country</p>
 										<p class="specifications__item1-tab-accordion-text">Emergency</p>
@@ -230,7 +243,9 @@
 								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
 									<p class="specifications__item1-tab-accordion-button-text">New login</p>
 									<div class="specifications__item1-tab-accordion-button-icon-container">
-										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+										<div class="specifications__item1-tab-accordion-button-icon">
+											<i class="fas fa-chevron-down"></i>
+										</div>
 									</div>
 								</a>
 								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
@@ -246,7 +261,9 @@
 								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
 									<p class="specifications__item1-tab-accordion-button-text">Find Dhl point</p>
 									<div class="specifications__item1-tab-accordion-button-icon-container">
-										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+										<div class="specifications__item1-tab-accordion-button-icon">
+											<i class="fas fa-chevron-down"></i>
+										</div>
 									</div>
 								</a>
 								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
@@ -262,7 +279,9 @@
 								<a class="specifications__item1-tab-accordion-button accordion__button accordion__button" href="javascript:void(0)">
 									<p class="specifications__item1-tab-accordion-button-text">find a service</p>
 									<div class="specifications__item1-tab-accordion-button-icon-container">
-										<div class="specifications__item1-tab-accordion-button-icon"><i class="fas fa-chevron-down"></i></div>
+										<div class="specifications__item1-tab-accordion-button-icon">
+											<i class="fas fa-chevron-down"></i>
+										</div>
 									</div>
 								</a>
 								<div class="specifications__item1-tab-accordion-wrapper accordion__wrapper">
@@ -323,40 +342,44 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__wrapper">
-			<div class="footer__img-left"><img src="img/footer-img1.png" alt=""></div>
+			<div class="footer__img-left">
+				<img src="img/footer-img1.png" alt="">
+			</div>
 			<div class="footer__nav">
 				<div class="footer__nav-item1 footer__nav-item">
 					<h4 class="footer__nav-title">Contact Center</h4>
-					<ul class="footer__nav-text-container">
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Express</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Parcel & eCommerce</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Global Forwarding</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Freight</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Supply Chain</a></li>
-					</ul>
+					<div class="footer__nav-links">
+						<a class="footer__nav-link" href="#">DHL Express</a>
+						<a class="footer__nav-link" href="#">DHL Parcel & eCommerce</a>
+						<a class="footer__nav-link" href="#">DHL Global Forwarding</a>
+						<a class="footer__nav-link" href="#">DHL Freight</a>
+						<a class="footer__nav-link" href="#">DHL Supply Chain</a>
+					</div>
 				</div>
 				<div class="footer__nav-item2 footer__nav-item">
 					<h4 class="footer__nav-title">About Us</h4>
-					<ul class="footer__nav-text-container">
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">Partnerships</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">Company Portrait</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">DHL Global Forwarding</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">Green Solutions</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">Innovation</a></li>
-					</ul>
+					<div class="footer__nav-links">
+						<a class="footer__nav-link" href="#">Partnerships</a>
+						<a class="footer__nav-link" href="#">Company Portrait</a>
+						<a class="footer__nav-link" href="#">DHL Global Forwarding</a>
+						<a class="footer__nav-link" href="#">Green Solutions</a>
+						<a class="footer__nav-link" href="#">Innovation</a>
+					</div>
 				</div>
 				<div class="footer__nav-item3 footer__nav-item">
 					<h4 class="footer__nav-title">Social Media</h4>
-					<ul class="footer__nav-text-container">
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">Facebook</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">dribbble</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">behance</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">gmail</a></li>
-						<li class="footer__nav-text-item"><a class="footer__nav-link" href="#">twitter</a></li>
-					</ul>
+					<div class="footer__nav-links">
+						<a class="footer__nav-link" href="#">Facebook</a>
+						<a class="footer__nav-link" href="#">dribbble</a>
+						<a class="footer__nav-link" href="#">behance</a>
+						<a class="footer__nav-link" href="#">gmail</a>
+						<a class="footer__nav-link" href="#">twitter</a>
+					</div>
 				</div>
 			</div>
-			<div class="footer__img-right"><img src="img/footer-img2.png" alt=""></div>
+			<div class="footer__img-right">
+				<img src="img/footer-img2.png" alt="">
+			</div>
 		</div>
 	</footer>
 	<div class="hamburger">
@@ -377,6 +400,5 @@
 			</nav>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
 </body>
 </html>
